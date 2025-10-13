@@ -15,7 +15,7 @@ jobs:
 
       - name: Create or update a file to trigger commit
         run: |
-          # 创建一个时间戳文件，每次运行内容都会变化，确保有东西可提交
+          # 创建一个时间戳文件，每次运行内容都会变化；确保有东西可提交
           date > last_updated.txt
 
       - name: Commit and push changes
